@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+:root {
+    --Body-Font: 'Bai Jamjuree', sans-serif;        
+    --whiteGraish: rgba(227, 227, 227, 0.2);
+    --darkBlue: rgb(1, 44, 174);
+    --gradient-1: rgb(0, 211, 235);       
+    --gradient-2: rgb(20, 251, 217);
+    --gradient-3: rgba(235, 0, 137, 0.285);       
+    --gradient-4: rgba(120, 20, 251, 0.259);
+}
+
+/*CSS Reset*/
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+li,
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--darkBlue);
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+img {
+    width: 100%;
+    max-width: 375px;
+}
+
+body {
+    font-family: var(--Body-Font);
+    color: var(--darkBlue);
+}
+
+#main {
+    width: 375px;  
+    margin: 0 auto;
+}
+
+/*Navbar*/
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 10px;
+}
+
+.navbar-links {
+    width: 280px;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    font-size: 1.2em; 
+    font-weight: 600;
+}
+
+.a-hover:hover {
+    border-bottom: 2px solid var(--gradient-2);
+}
+
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 32px;
+}
+
+.hr {
+    width: 90%;
+    height: 2px;
+    margin: 0 auto 40px;
+    background-image: linear-gradient(90deg, var(--gradient-1), var(--gradient-2));
+}
+
+/*Welcome section*/
+
+.about {
+    margin: 50px auto 50px;
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.description {
+    font-size: 1.5em;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+span {      
+    background:  
+    linear-gradient(  	
+    to right,	 
+    var(--gradient-1),
+    var(--gradient-2)
+    );
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;  
+    display: inline-block;                  
+}
+
+fieldset {    
+    border-image: linear-gradient(90deg, var(--gradient-2), var(--gradient-1))1;    
+    width: 220px;
+    height: 60px;
+}
+
+.shadow {
+    width: 220px;
+    height: 50px;
+    background-image: linear-gradient(
+        90deg,
+        var(--gradient-3),
+        var(--gradient-4))
+        ;
+    position: relative;   
+    top: -15px;
+    left: 100px;    
+}
+
+i {    
+    font-size: 3em;   
+    background:  
+    linear-gradient(  
+        45deg,	 
+        var(--gradient-1),
+        var(--gradient-2)
+    );
+  		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+  	display: inline-block;    
+}
+
+.nav-social {
+    width: 200px;       
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 50px;
+    padding: 4px;
+}
+
+.portraid {
+    width: 300px;
+    height: 300px;
+    border-radius: 7% 22% 6% 23% /7% 22% 6% 23% ;
+    background-image: linear-gradient(
+        to right,
+        var(--gradient-1),
+        var(--gradient-2)
+        ); 
+    margin: 15px 15px;   
+    margin-bottom: 100px;       
+}
+
+.hero-img {
+    width: 305px;
+    height: 300px;
+    border-radius: 7% 22% 6% 23% /7% 22% 6% 23%;
+    position: relative;
+    margin: 38px;    
+}
+
+/*About section*/
+
+.about-description {    
+    padding: 20px;
+    margin-top: -20px;
+}
+
+.about-span {
+    display: inline;
+}
+
+.project-tile {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.description-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills {
+    background:  
+    linear-gradient(  
+        45deg,	 
+        var(--gradient-1),
+        var(--gradient-2)
+    );
+  		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;    
+    margin-bottom: 60px;
+}
+
+.skills > li {
+    display: flex;
+    flex-direction: column;
+    place-items: center;    
+}
+
+/* Projects section*/
+
+#projects {
+    width: 350px;    
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.gradient-card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 5px solid transparent;
+    margin: 50px auto;   
+}
+
+.gradient-border {
+    border-image: linear-gradient(
+        to right,
+        var(--gradient-2),
+        var(--gradient-1)
+    )1;    
+    margin-bottom: 50px;
+}
+
+.project-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 5px; 
+    margin-bottom: 10px;   
+}
+
+.name-project {
+    text-align: center;
+}
+
+/*Contact section*/
+
+.social {   
+    flex-direction: column;    
+    margin: 30px 0 30px;
+}
+
+.social-box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-bottom: 20px;   
+    cursor: pointer; 
+}
+
+/*Footer*/
+
+
+#creator {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+/*Media Queries*/
+@media (min-width: 1100px) {    
+    #main {
+        width: 85%;
+    }
+
+    .project-tile {
+        text-align: left;
+    }
+
+    /*Navbar*/
+
+    #navbar {
+        width: 96%;
+    }
+
+    .avatar {
+        width: 60px;
+        height: 60px;
+        margin-left: 55px;
+    }  
+
+    /*Header*/
+
+    #welcome-section {       
+        display: flex;        
+        justify-content: center;
+        align-items: center;
+        gap: 200px;
+        width: 1100px;
+        margin: 50px auto;        
+    }
+
+    .title,
+    .description {
+        margin-bottom: 100px;
+    }
+
+    .portraid,
+    .hero-img {
+        width: 400px;
+        height: 400px;
+    }
+
+    /*About section*/
+
+    #about-section {
+        width: 1100px;       
+        margin: 0 auto;
+    }
+
+    /*Projects section*/
+
+    #projects {
+        width: 1100px; 
+        margin-bottom: 50px;     
+    }
+
+    .project-cards {
+        display: grid;        
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;        
+    }  
+
+    /*Contact section*/
+    
+    #contact {
+        width: 1100px;       
+        margin: 0 auto;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    } 
+
+    /*Footer*/
+
+    #footer {
+        width: 1100px;
+        margin: 0 auto;
+    }
+  
+}
+
